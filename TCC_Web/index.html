@@ -6,21 +6,18 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
         <!-- Optional theme -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
+        <script src="scripts/main.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!--
@@ -28,43 +25,45 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!--nav bar start-->
-        
-          <header class = "navbar-inverse" role="banner">
-          <div class = "container">
-            <nav role="navigation" >
-              <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Troy High School</a>
-                </div>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="leaders.html">Club Leaders</a></li>
-                    <li><a href="Events.html">Events</a></li>
-                    <li><a href="Projects.html">Projects</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="Form.html">Form</a></li>
-                        <li><a href="Classes.html">Classes</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div><!-- /.container-fluid -->
-              </nav>
+        <header class = "navbar-inverse" role="banner">
+            <div class = "container">
+                <nav role="navigation" >
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Troy High School</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="leaders.html">Club Leaders</a></li>
+                                <li><a href="Events.html">Events</a></li>
+                                <li><a href="Projects.html">Projects</a></li>
+                                <li><a href="misc.html">Misc</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="Form.html">Form</a></li>
+                                        <li><a href="Classes.html">Classes</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
-          </header>
-          <!--end of nav bar -->
+        </header>
+        <!--end of nav bar -->
 
         <div class="container">
             <div class="jumbotron" align="center">
@@ -88,49 +87,39 @@
             </div>
 
             <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+                <p>Troy High 2014-2015</p>
             </div>
 
         </div>
 
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        <!--
+                 Google Analytics: change UA-XXXXX-X to be your site's ID.
+                <script>
+                    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                    e.src='//www.google-analytics.com/analytics.js';
+                    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                    ga('create','UA-XXXXX-X');ga('send','pageview');
+                </script>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="../bower_components/bootstrap/js/affix.js"></script>
-        <script src="../bower_components/bootstrap/js/alert.js"></script>
-        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="../bower_components/bootstrap/js/modal.js"></script>
-        <script src="../bower_components/bootstrap/js/transition.js"></script>
-        <script src="../bower_components/bootstrap/js/button.js"></script>
-        <script src="../bower_components/bootstrap/js/popover.js"></script>
-        <script src="../bower_components/bootstrap/js/carousel.js"></script>
-        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap/js/collapse.js"></script>
-        <script src="../bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+                 build:js scripts/plugins.js
+                <script src="../bower_components/bootstrap/js/affix.js"></script>
+                <script src="../bower_components/bootstrap/js/alert.js"></script>
+                <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+                <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+                <script src="../bower_components/bootstrap/js/modal.js"></script>
+                <script src="../bower_components/bootstrap/js/transition.js"></script>
+                <script src="../bower_components/bootstrap/js/button.js"></script>
+                <script src="../bower_components/bootstrap/js/popover.js"></script>
+                <script src="../bower_components/bootstrap/js/carousel.js"></script>
+                <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+                <script src="../bower_components/bootstrap/js/collapse.js"></script>
+                <script src="../bower_components/bootstrap/js/tab.js"></script>
+        -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      </body>
+
+    </body>
 </html>

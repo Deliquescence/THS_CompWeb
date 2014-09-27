@@ -6,18 +6,38 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <!-- Optional theme -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
+        <link rel="stylesheet" href="styles/main.css">
+
         <script src="scripts/main.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+        <style type="text/css">
+            .project{
+                //text-align: center;
+                /*                margin-left: 5px;
+                                margin-right: 5px;
+                                padding-left: 0px;
+                                padding-right: 0px;*/
+            }
+            .myTab{
+                cursor: pointer;
+                border: black;
+                border-width: 1px;
+            }
+            .nav-pills{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        </style>
     </head>
 
     <body onload="$('#hardware').hide();">
@@ -61,40 +81,90 @@
         </header>
         <!--End of nav bar -->
 
-        <!--        <script language="javascript" type="text/javascript">
-                    function showHide(shID) {
-                        if (document.getElementById(shID)) {
-                            if (document.getElementById(shID + '-show').style.display !== 'none') {
-                                document.getElementById(shID + '-show').style.display = 'none';
-                                document.getElementById(shID).style.display = 'block';
-                            }
-                            else {
-                                document.getElementById(shID + '-show').style.display = 'inline';
-                                document.getElementById(shID).style.display = 'none';
-                            }
-                        }
-                    }
-                </script>-->
+
 
         <!--Tabs-->
-        <div class = "projects">
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-                <li role="presentation"><a onclick="$('#software').show();
-                        $('#hardware').hide();">Software</a></li>
-                <li role="presentation"><a onclick="$('#software').hide();
-                        $('#hardware').show();">Hardware</a></li>
+        <div class = "container">
+            <ul class="nav nav-pills nav-justified" role="tablist">
+                <!--
+                Tab switching is here
+
+                1. Show correct div
+                2. Hide other div
+                3. Set tab to active
+                4. Set other tab not active
+                -->
+                <li id="softwareTab" role="presentation" class="myTab active" style="padding-right: 5px;"><a onclick="$('#software').show();
+                        $('#hardware').hide();
+                        $('#softwareTab').attr('class', 'myTab active');
+                        $('#hardwareTab').attr('class', 'myTab');">Software</a></li>
+                <li id="hardwareTab" role="presentation" class="myTab" style="padding-left: 5px;"><a onclick="$('#software').hide();
+                        $('#hardware').show();
+                        $('#hardwareTab').attr('class', 'myTab active');
+                        $('#softwareTab').attr('class', 'myTab');">Hardware</a></li>
             </ul>
-            <div id="software">
-                <p>software</p>
+            <!-- Software Display-->
+            <div id="software" class="panel panel-primary">
+                <div class="panel-heading"><h2>Software Projects</h2></div>
+                <div class="panel-body">
+                    <!-- Software Projects-->
+                    <!-- TEMPLATE
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h3>Software Project Title</h3></div>
+                        <div class="panel-body">
+                            Project Description
+                        </div>
+                    </div>
+                    -->
+
+                    <div class="project panel panel-info">
+                        <div class="panel-heading"><h3>Software Project 1</h3></div>
+                        <div class="panel-body">
+                            Project Description one
+                        </div>
+                    </div>
+
+                    <div class="project panel panel-info ">
+                        <div class="panel-heading"><h3>Software Project 2</h3></div>
+                        <div class="panel-body">
+                            Project Description two
+                        </div>
+                    </div>
+
+                    <div class="project panel panel-info ">
+                        <div class="panel-heading"><h3>Software Project 3</h3></div>
+                        <div class="panel-body">
+                            Project Description three
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div id="hardware">
-                <p>hardware</p>
+            <!-- Hardware Display-->
+            <div id="hardware" class="panel panel-primary">
+                <div class="panel-heading"><h2>Hardware Projects</h2></div>
+                <div class="panel-body">
+                    <!-- Hardware Projects-->
+                    <!--TEMPLATE
+                    <div class="panel panel-info">
+                    <div class="panel-heading"><h3>Hardware Project Name</h3></div>
+                    <div class="panel-body">
+                    Project Description
+                    </div>
+                    </div>
+                    -->
+
+                    <div class="project panel panel-info">
+                        <div class="panel-heading"><h3>Hardware Project 1</h3></div>
+                        <div class="panel-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam feugiat ex et odio fringilla tempor. Pellentesque consequat sagittis varius. In tellus ante, sollicitudin vitae augue id, convallis bibendum ante. Nunc a elit eget quam consectetur luctus. Nullam a suscipit turpis. Donec est sapien, tempor eget augue in, fermentum efficitur lacus. Vivamus sodales, elit ut congue pretium, eros nulla tincidunt lorem, at hendrerit sem risus quis quam.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <!--End of Tabs code-->
 
-
     </body>
-
 </html>
